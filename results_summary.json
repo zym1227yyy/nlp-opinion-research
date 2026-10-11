@@ -1,0 +1,186 @@
+{
+  "seed": 20261011,
+  "source": "entirely synthetic, fictional topics, no real users/events",
+  "raw_n": 1360,
+  "processed_n": 1148,
+  "removed": {
+    "duplicate": 192,
+    "no_chinese": 20
+  },
+  "retention": 0.8441176470588235,
+  "baseline": {
+    "n": 1148,
+    "accuracy": 0.730836236933798,
+    "macro_f1": 0.7644847954218136,
+    "confusion": [
+      [
+        373,
+        0,
+        215
+      ],
+      [
+        0,
+        247,
+        0
+      ],
+      [
+        94,
+        0,
+        219
+      ]
+    ]
+  },
+  "rule": {
+    "n": 1148,
+    "accuracy": 0.9468641114982579,
+    "macro_f1": 0.9521665437344838,
+    "confusion": [
+      [
+        527,
+        0,
+        61
+      ],
+      [
+        0,
+        247,
+        0
+      ],
+      [
+        0,
+        0,
+        313
+      ]
+    ]
+  },
+  "entropy_weights": [
+    0.42959575873277206,
+    0.3502250004047375,
+    0.22017924086249047
+  ],
+  "stages": [
+    {
+      "phase": "萌芽",
+      "n": 130,
+      "similarity": 0.10899797904585952,
+      "negative_share": 0.18461538461538463,
+      "design_negative_share": 0.23076923076923078,
+      "intensity": 0.3466666666666667
+    },
+    {
+      "phase": "集中讨论",
+      "n": 770,
+      "similarity": 0.1227526489892924,
+      "negative_share": 0.5818181818181818,
+      "design_negative_share": 0.6480519480519481,
+      "intensity": 0.4338528138528138
+    },
+    {
+      "phase": "回落",
+      "n": 248,
+      "similarity": 0.1026744720440729,
+      "negative_share": 0.2217741935483871,
+      "design_negative_share": 0.23790322580645162,
+      "intensity": 0.3202956989247312
+    }
+  ],
+  "by_expression": [
+    {
+      "expression_type": "degree",
+      "n": 174,
+      "baseline_accuracy": 1.0,
+      "rule_accuracy": 1.0
+    },
+    {
+      "expression_type": "direct",
+      "n": 418,
+      "baseline_accuracy": 1.0,
+      "rule_accuracy": 1.0
+    },
+    {
+      "expression_type": "irony",
+      "n": 61,
+      "baseline_accuracy": 0.0,
+      "rule_accuracy": 0.0
+    },
+    {
+      "expression_type": "mixed",
+      "n": 106,
+      "baseline_accuracy": 1.0,
+      "rule_accuracy": 1.0
+    },
+    {
+      "expression_type": "negation",
+      "n": 248,
+      "baseline_accuracy": 0.0,
+      "rule_accuracy": 1.0
+    },
+    {
+      "expression_type": "neutral",
+      "n": 141,
+      "baseline_accuracy": 1.0,
+      "rule_accuracy": 1.0
+    }
+  ],
+  "peak_day_equal": 6,
+  "peak_day_entropy": 6,
+  "sensitivity": [
+    {
+      "setting": "threshold_0",
+      "accuracy": 0.9468641114982579,
+      "macro_f1": 0.9521665437344838
+    },
+    {
+      "setting": "threshold_0.05",
+      "accuracy": 0.9468641114982579,
+      "macro_f1": 0.9521665437344838
+    },
+    {
+      "setting": "threshold_0.2",
+      "accuracy": 0.9468641114982579,
+      "macro_f1": 0.9521665437344838
+    },
+    {
+      "setting": "threshold_0.5",
+      "accuracy": 0.3362369337979094,
+      "macro_f1": 0.30271686802728787
+    },
+    {
+      "setting": "bigram_tfidf_萌芽",
+      "similarity": 0.10899797904585952
+    },
+    {
+      "setting": "bigram_tfidf_集中讨论",
+      "similarity": 0.1227526489892924
+    },
+    {
+      "setting": "bigram_tfidf_回落",
+      "similarity": 0.1026744720440729
+    },
+    {
+      "setting": "bigram_tf_萌芽",
+      "similarity": 0.16831239153435718
+    },
+    {
+      "setting": "bigram_tf_集中讨论",
+      "similarity": 0.30232161358002413
+    },
+    {
+      "setting": "bigram_tf_回落",
+      "similarity": 0.18744508900594253
+    },
+    {
+      "setting": "trigram_tfidf_萌芽",
+      "similarity": 0.0934401306854142
+    },
+    {
+      "setting": "trigram_tfidf_集中讨论",
+      "similarity": 0.10731489433344443
+    },
+    {
+      "setting": "trigram_tfidf_回落",
+      "similarity": 0.08636994151274134
+    }
+  ],
+  "vocabulary_n": 326,
+  "char_count_mean": 33.295296167247386
+}
